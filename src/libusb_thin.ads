@@ -427,6 +427,7 @@ package Libusb_Thin is
       Index             : Unsigned_Char;
       Buffer            : System.Address;
       Size              : Int) return Int;
+   pragma Import (C,Usb_Get_Descriptor_By_Endpoint,"usb_get_descriptor_by_endpoint");
    
    -- -------------- --
    -- Bulk Transfers --
